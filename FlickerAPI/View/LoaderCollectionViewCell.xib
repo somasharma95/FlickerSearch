@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LoaderCollectionViewCell" id="gTV-IL-0wX" customClass="LoaderCollectionViewCell" customModule="FlickerAPI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="202" height="109"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="202" height="109"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZS-6c-wIw">
+                        <rect key="frame" x="0.0" y="0.0" width="202" height="109"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="g0Q-Zi-fb3">
+                                <rect key="frame" x="91" y="44.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g0Q-Zi-fb3" firstAttribute="centerY" secondItem="BZS-6c-wIw" secondAttribute="centerY" id="hTE-kC-qEa"/>
+                            <constraint firstItem="g0Q-Zi-fb3" firstAttribute="centerX" secondItem="BZS-6c-wIw" secondAttribute="centerX" id="wFa-Aa-9vw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BZS-6c-wIw" secondAttribute="trailing" id="0Ux-l8-Bgr"/>
+                <constraint firstAttribute="bottom" secondItem="BZS-6c-wIw" secondAttribute="bottom" id="2Wc-Fo-ese"/>
+                <constraint firstItem="BZS-6c-wIw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MXP-KP-f0l"/>
+                <constraint firstItem="BZS-6c-wIw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VCj-fc-XHo"/>
+            </constraints>
+            <size key="customSize" width="202" height="109"/>
+            <point key="canvasLocation" x="128.98550724637681" y="107.47767857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
